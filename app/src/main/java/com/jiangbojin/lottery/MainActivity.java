@@ -1,5 +1,7 @@
 package com.jiangbojin.lottery;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -20,6 +22,8 @@ import java.util.Map;
 public class MainActivity extends ActionBarActivity {
    private MyClickListener myClickListener;
    private int[] menu_items = {R.id.My_history};
+    SlidingMenu menu;
+    FragmentHistory fragmentHistory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +35,7 @@ public class MainActivity extends ActionBarActivity {
 
     protected void InitSlidingMenu() {
         // configure the SlidingMenu
-        SlidingMenu menu = new SlidingMenu(this);
+        menu = new SlidingMenu(this);
         menu.setMode(SlidingMenu.LEFT);
         menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
         menu.setShadowWidthRes(R.dimen.shadow_width);
@@ -40,6 +44,12 @@ public class MainActivity extends ActionBarActivity {
         menu.setFadeDegree(0.35f);
         menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
         menu.setMenu(R.layout.slidingmenu);
+        menu.setOnOpenedListener(new SlidingMenu.OnOpenedListener() {
+            @Override
+            public void onOpened() {
+                menu.showMenu();
+            }
+        });
         InitSlidingMenuItem();
     }
 
@@ -80,9 +90,17 @@ public class MainActivity extends ActionBarActivity {
 
         @Override
         public void onClick(View v) {
+            FragmentManager fm = getFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
             if (v.getId() == R.id.My_history)
             {
-
+                if (fragmentHistory == null)
+                {
+                    fragmentHistory = new FragmentHistory();
+                }
+                ft.replace(R.id.id_fragment_content,fragmentHistory);
+                ft.commit();
+                menu.showContent();
             }
         }
     }

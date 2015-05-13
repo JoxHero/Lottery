@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginTop="5.0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ffdedede" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffdedede" />
+
+                <TextView
+                    android:id="@+id/history_date_header"
+                    android:layout_marginLeft="2.0dp"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="投注日期" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffdedede" />
+
+                <TextView
+                    android:id="@+id/history_type_header"
+                    android:layout_marginLeft="2.0dp"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="玩法" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffdedede" />
+
+                <TextView
+                    android:id="@+id/history_input_header"
+                    android:layout_marginLeft="2.0dp"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="投注金额" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffdedede" />
+
+                <TextView
+                    android:id="@+id/history_result_header"
+                    android:layout_marginLeft="2.0dp"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="战绩" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffdedede" />
+
+                <TextView
+                    android:id="@+id/history_output_header"
+                    android:layout_marginLeft="2.0dp"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="净盈亏" />
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffdedede" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ffdedede" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffdedede" />
+
+                <TextView
+                    android:id="@+id/history_date_content"
+                    android:layout_marginLeft="2.0dp"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="投注日期" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffdedede" />
+
+                <TextView
+                    android:id="@+id/history_type_content"
+                    android:layout_marginLeft="2.0dp"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="玩法" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffdedede" />
+
+                <TextView
+                    android:id="@+id/history_input_content"
+                    android:layout_marginLeft="2.0dp"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="投注金额" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffdedede" />
+
+                <TextView
+                    android:id="@+id/history_result_content"
+                    android:layout_marginLeft="2.0dp"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="战绩" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffdedede" />
+
+                <TextView
+                    android:id="@+id/history_output_content"
+                    android:layout_marginLeft="2.0dp"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="净盈亏" />
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffdedede" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ffdedede" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"
+        android:layout_marginTop="2.0dp"
+        android:background="#ffe2e2e2" />
+</LinearLayout>
